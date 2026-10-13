@@ -1,0 +1,40 @@
+.month_top {
+    padding: 15px;
+    height: 100%;
+    .datePicker {
+        height: 30px;
+        // background-color: pink;
+        display: flex;
+        align-items: center;
+        .clickBox {
+            font-size: 16px;
+            font-weight: 500;
+            padding: 0 10px;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            // background-color:red;
+            span {
+                padding-right: 5px;
+            }
+            .icon {
+                font-size: 10px;
+                font-weight: 700;
+            }
+        }
+    }
+    .numViewRow{
+        margin-top: 20px;
+        margin-left: 10px;
+        display: flex;
+        justify-content: flex-start;
+        .numView {
+            flex: 1;
+            .num {
+                font-size: 20px;
+                font-weight: 700;
+                margin-bottom: 5px;
+            }
+        }
+    }
+}

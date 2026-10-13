@@ -1,0 +1,732 @@
+{
+  "bill": [
+    {
+      "type": "pay",
+      "money": -25.5,
+      "date": "2022-01-05 09:15:22",
+      "useFor": "drinks",
+      "id": 1
+    },
+    {
+      "type": "pay",
+      "money": -1200,
+      "date": "2022-01-10 14:20:10",
+      "useFor": "rent",
+      "id": 2
+    },
+    {
+      "type": "pay",
+      "money": -45,
+      "date": "2022-01-15 12:30:00",
+      "useFor": "food",
+      "id": 3
+    },
+    {
+      "type": "pay",
+      "money": -120,
+      "date": "2022-01-20 18:45:10",
+      "useFor": "transport",
+      "id": 4
+    },
+    {
+      "type": "pay",
+      "money": -88,
+      "date": "2022-02-14 18:30:00",
+      "useFor": "longdistance",
+      "id": 5
+    },
+    {
+      "type": "pay",
+      "money": -156.8,
+      "date": "2022-02-16 12:05:45",
+      "useFor": "food",
+      "id": 6
+    },
+    {
+      "type": "pay",
+      "money": -50,
+      "date": "2022-02-20 08:30:15",
+      "useFor": "drinks",
+      "id": 7
+    },
+    {
+      "type": "pay",
+      "money": -299,
+      "date": "2022-02-25 20:11:32",
+      "useFor": "shopping",
+      "id": 8
+    },
+    {
+      "type": "pay",
+      "money": -1200,
+      "date": "2022-03-01 10:00:00",
+      "useFor": "rent",
+      "id": 9
+    },
+    {
+      "type": "pay",
+      "money": -68,
+      "date": "2022-03-08 14:20:00",
+      "useFor": "drinks",
+      "id": 10
+    },
+    {
+      "type": "pay",
+      "money": -200,
+      "date": "2022-03-15 19:30:00",
+      "useFor": "entertainment",
+      "id": 11
+    },
+    {
+      "type": "pay",
+      "money": -35.5,
+      "date": "2022-03-22 08:15:00",
+      "useFor": "transport",
+      "id": 12
+    },
+    {
+      "type": "pay",
+      "money": -1200,
+      "date": "2022-04-01 09:00:00",
+      "useFor": "rent",
+      "id": 13
+    },
+    {
+      "type": "pay",
+      "money": -899,
+      "date": "2022-04-18 20:11:32",
+      "useFor": "shopping",
+      "id": 14
+    },
+    {
+      "type": "pay",
+      "money": -145,
+      "date": "2022-04-10 12:45:00",
+      "useFor": "food",
+      "id": 15
+    },
+    {
+      "type": "pay",
+      "money": -45,
+      "date": "2022-04-25 08:30:15",
+      "useFor": "transport",
+      "id": 16
+    },
+    {
+      "type": "pay",
+      "money": -1200,
+      "date": "2022-05-01 09:00:00",
+      "useFor": "rent",
+      "id": 17
+    },
+    {
+      "type": "pay",
+      "money": -78.5,
+      "date": "2022-05-12 12:30:45",
+      "useFor": "drinks",
+      "id": 18
+    },
+    {
+      "type": "pay",
+      "money": -45,
+      "date": "2022-05-20 08:30:15",
+      "useFor": "transport",
+      "id": 19
+    },
+    {
+      "type": "pay",
+      "money": -230,
+      "date": "2022-05-28 18:20:30",
+      "useFor": "food",
+      "id": 20
+    },
+    {
+      "type": "pay",
+      "money": -1200,
+      "date": "2022-06-01 09:00:00",
+      "useFor": "rent",
+      "id": 21
+    },
+    {
+      "type": "pay",
+      "money": -320,
+      "date": "2022-06-01 19:45:00",
+      "useFor": "entertainment",
+      "id": 22
+    },
+    {
+      "type": "pay",
+      "money": -55,
+      "date": "2022-06-15 10:36:42",
+      "useFor": "drinks",
+      "id": 23
+    },
+    {
+      "type": "pay",
+      "money": -88,
+      "date": "2022-06-20 10:37:51",
+      "useFor": "longdistance",
+      "id": 24
+    },
+    {
+      "type": "pay",
+      "money": -150,
+      "date": "2022-06-25 12:00:00",
+      "useFor": "food",
+      "id": 25
+    },
+    {
+      "type": "pay",
+      "money": -1200,
+      "date": "2022-07-01 09:00:00",
+      "useFor": "rent",
+      "id": 26
+    },
+    {
+      "type": "pay",
+      "money": -250,
+      "date": "2022-07-15 14:30:00",
+      "useFor": "shopping",
+      "id": 27
+    },
+    {
+      "type": "pay",
+      "money": -68.5,
+      "date": "2022-07-22 21:10:05",
+      "useFor": "drinks",
+      "id": 28
+    },
+    {
+      "type": "pay",
+      "money": -42,
+      "date": "2022-07-28 08:20:00",
+      "useFor": "transport",
+      "id": 29
+    },
+    {
+      "type": "pay",
+      "money": -1200,
+      "date": "2022-08-01 09:00:00",
+      "useFor": "rent",
+      "id": 30
+    },
+    {
+      "type": "pay",
+      "money": -65,
+      "date": "2022-08-08 12:15:30",
+      "useFor": "drinks",
+      "id": 31
+    },
+    {
+      "type": "pay",
+      "money": -2500,
+      "date": "2022-08-15 10:00:00",
+      "useFor": "travel",
+      "id": 32
+    },
+    {
+      "type": "pay",
+      "money": -180,
+      "date": "2022-08-20 19:45:00",
+      "useFor": "food",
+      "id": 33
+    },
+    {
+      "type": "pay",
+      "money": -350,
+      "date": "2022-08-25 20:00:00",
+      "useFor": "entertainment",
+      "id": 34
+    },
+    {
+      "type": "pay",
+      "money": -1200,
+      "date": "2022-09-01 09:00:00",
+      "useFor": "rent",
+      "id": 35
+    },
+    {
+      "type": "pay",
+      "money": -120,
+      "date": "2022-09-09 13:20:40",
+      "useFor": "food",
+      "id": 36
+    },
+    {
+      "type": "pay",
+      "money": -52,
+      "date": "2022-09-18 08:40:15",
+      "useFor": "transport",
+      "id": 37
+    },
+    {
+      "type": "pay",
+      "money": -99,
+      "date": "2022-09-28 10:36:42",
+      "useFor": "drinks",
+      "id": 38
+    },
+    {
+      "type": "pay",
+      "money": -1200,
+      "date": "2022-10-01 09:00:00",
+      "useFor": "rent",
+      "id": 39
+    },
+    {
+      "type": "pay",
+      "money": -150,
+      "date": "2022-10-05 12:00:00",
+      "useFor": "food",
+      "id": 40
+    },
+    {
+      "type": "pay",
+      "money": -560,
+      "date": "2022-10-18 14:45:00",
+      "useFor": "shopping",
+      "id": 41
+    },
+    {
+      "type": "pay",
+      "money": -99,
+      "date": "2022-10-24 10:36:42",
+      "useFor": "drinks",
+      "id": 42
+    },
+    {
+      "type": "pay",
+      "money": -88,
+      "date": "2022-10-24 10:37:51",
+      "useFor": "longdistance",
+      "id": 43
+    },
+    {
+      "type": "pay",
+      "money": -1200,
+      "date": "2022-11-01 09:00:00",
+      "useFor": "rent",
+      "id": 44
+    },
+    {
+      "type": "pay",
+      "money": -450,
+      "date": "2022-11-11 00:05:12",
+      "useFor": "shopping",
+      "id": 45
+    },
+    {
+      "type": "pay",
+      "money": -65,
+      "date": "2022-11-15 08:30:00",
+      "useFor": "drinks",
+      "id": 46
+    },
+    {
+      "type": "pay",
+      "money": -210,
+      "date": "2022-11-25 18:40:22",
+      "useFor": "food",
+      "id": 47
+    },
+    {
+      "type": "pay",
+      "money": -1200,
+      "date": "2022-12-01 09:00:00",
+      "useFor": "rent",
+      "id": 48
+    },
+    {
+      "type": "pay",
+      "money": -88,
+      "date": "2022-12-12 10:37:51",
+      "useFor": "longdistance",
+      "id": 49
+    },
+    {
+      "type": "pay",
+      "money": -35,
+      "date": "2022-12-18 08:15:30",
+      "useFor": "transport",
+      "id": 50
+    },
+    {
+      "type": "pay",
+      "money": -210,
+      "date": "2022-12-25 18:40:22",
+      "useFor": "food",
+      "id": 51
+    },
+    {
+      "type": "pay",
+      "money": -800,
+      "date": "2022-12-30 20:00:00",
+      "useFor": "entertainment",
+      "id": 52
+    },
+    {
+      "type": "pay",
+      "money": -1200,
+      "date": "2023-01-01 09:00:00",
+      "useFor": "rent",
+      "id": 53
+    },
+    {
+      "type": "pay",
+      "money": -35,
+      "date": "2023-01-03 08:15:30",
+      "useFor": "transport",
+      "id": 54
+    },
+    {
+      "type": "pay",
+      "money": -145,
+      "date": "2023-01-15 12:45:00",
+      "useFor": "food",
+      "id": 55
+    },
+    {
+      "type": "pay",
+      "money": -68,
+      "date": "2023-01-20 14:20:00",
+      "useFor": "drinks",
+      "id": 56
+    },
+    {
+      "type": "pay",
+      "money": -1200,
+      "date": "2023-02-01 09:00:00",
+      "useFor": "rent",
+      "id": 57
+    },
+    {
+      "type": "pay",
+      "money": -188,
+      "date": "2023-02-14 20:30:00",
+      "useFor": "entertainment",
+      "id": 58
+    },
+    {
+      "type": "pay",
+      "money": -230,
+      "date": "2023-02-18 18:20:30",
+      "useFor": "food",
+      "id": 59
+    },
+    {
+      "type": "pay",
+      "money": -45,
+      "date": "2023-02-25 08:30:15",
+      "useFor": "transport",
+      "id": 60
+    },
+    {
+      "type": "pay",
+      "money": -1200,
+      "date": "2023-03-01 09:00:00",
+      "useFor": "rent",
+      "id": 61
+    },
+    {
+      "type": "pay",
+      "money": -66.6,
+      "date": "2023-03-08 15:22:18",
+      "useFor": "drinks",
+      "id": 62
+    },
+    {
+      "type": "pay",
+      "money": -299,
+      "date": "2023-03-15 20:11:32",
+      "useFor": "shopping",
+      "id": 63
+    },
+    {
+      "type": "pay",
+      "money": -150,
+      "date": "2023-03-28 12:00:00",
+      "useFor": "food",
+      "id": 64
+    },
+    {
+      "type": "pay",
+      "money": -1200,
+      "date": "2023-04-01 09:00:00",
+      "useFor": "rent",
+      "id": 65
+    },
+    {
+      "type": "pay",
+      "money": -3200,
+      "date": "2023-04-01 11:00:00",
+      "useFor": "travel",
+      "id": 66
+    },
+    {
+      "type": "pay",
+      "money": -78.5,
+      "date": "2023-04-12 12:30:45",
+      "useFor": "drinks",
+      "id": 67
+    },
+    {
+      "type": "pay",
+      "money": -42,
+      "date": "2023-04-20 08:20:00",
+      "useFor": "transport",
+      "id": 68
+    },
+    {
+      "type": "pay",
+      "money": -320,
+      "date": "2023-04-25 19:45:00",
+      "useFor": "entertainment",
+      "id": 69
+    },
+    {
+      "type": "pay",
+      "money": -1200,
+      "date": "2023-05-01 09:00:00",
+      "useFor": "rent",
+      "id": 70
+    },
+    {
+      "type": "pay",
+      "money": -145,
+      "date": "2023-05-06 19:10:05",
+      "useFor": "food",
+      "id": 71
+    },
+    {
+      "type": "pay",
+      "money": -88,
+      "date": "2023-05-18 10:37:51",
+      "useFor": "longdistance",
+      "id": 72
+    },
+    {
+      "type": "pay",
+      "money": -55,
+      "date": "2023-05-28 10:36:42",
+      "useFor": "drinks",
+      "id": 73
+    },
+    {
+      "type": "pay",
+      "money": -1200,
+      "date": "2023-06-01 09:00:00",
+      "useFor": "rent",
+      "id": 74
+    },
+    {
+      "type": "pay",
+      "money": -180,
+      "date": "2023-06-10 19:45:00",
+      "useFor": "food",
+      "id": 75
+    },
+    {
+      "type": "pay",
+      "money": -560,
+      "date": "2023-06-18 14:45:00",
+      "useFor": "shopping",
+      "id": 76
+    },
+    {
+      "type": "pay",
+      "money": -65,
+      "date": "2023-06-25 12:15:30",
+      "useFor": "drinks",
+      "id": 77
+    },
+    {
+      "type": "pay",
+      "money": -1200,
+      "date": "2023-07-01 09:00:00",
+      "useFor": "rent",
+      "id": 78
+    },
+    {
+      "type": "pay",
+      "money": -250,
+      "date": "2023-07-15 14:30:00",
+      "useFor": "shopping",
+      "id": 79
+    },
+    {
+      "type": "pay",
+      "money": -52,
+      "date": "2023-07-22 08:40:15",
+      "useFor": "transport",
+      "id": 80
+    },
+    {
+      "type": "pay",
+      "money": -92,
+      "date": "2023-07-29 21:05:10",
+      "useFor": "longdistance",
+      "id": 81
+    },
+    {
+      "type": "pay",
+      "money": -1200,
+      "date": "2023-08-01 09:00:00",
+      "useFor": "rent",
+      "id": 82
+    },
+    {
+      "type": "pay",
+      "money": -2500,
+      "date": "2023-08-12 10:00:00",
+      "useFor": "travel",
+      "id": 83
+    },
+    {
+      "type": "pay",
+      "money": -99,
+      "date": "2023-08-18 10:36:42",
+      "useFor": "drinks",
+      "id": 84
+    },
+    {
+      "type": "pay",
+      "money": -210,
+      "date": "2023-08-25 18:40:22",
+      "useFor": "food",
+      "id": 85
+    },
+    {
+      "type": "pay",
+      "money": -350,
+      "date": "2023-08-30 20:00:00",
+      "useFor": "entertainment",
+      "id": 86
+    },
+    {
+      "type": "pay",
+      "money": -1200,
+      "date": "2023-09-01 09:00:00",
+      "useFor": "rent",
+      "id": 87
+    },
+    {
+      "type": "pay",
+      "money": -78.5,
+      "date": "2023-09-12 12:30:45",
+      "useFor": "drinks",
+      "id": 88
+    },
+    {
+      "type": "pay",
+      "money": -145,
+      "date": "2023-09-15 12:45:00",
+      "useFor": "food",
+      "id": 89
+    },
+    {
+      "type": "pay",
+      "money": -35,
+      "date": "2023-09-28 08:15:30",
+      "useFor": "transport",
+      "id": 90
+    },
+    {
+      "type": "pay",
+      "money": -1200,
+      "date": "2023-10-01 09:00:00",
+      "useFor": "rent",
+      "id": 91
+    },
+    {
+      "type": "pay",
+      "money": -230,
+      "date": "2023-10-01 18:20:30",
+      "useFor": "food",
+      "id": 92
+    },
+    {
+      "type": "pay",
+      "money": -68,
+      "date": "2023-10-15 14:20:00",
+      "useFor": "drinks",
+      "id": 93
+    },
+    {
+      "type": "pay",
+      "money": -450,
+      "date": "2023-10-20 00:05:12",
+      "useFor": "shopping",
+      "id": 94
+    },
+    {
+      "type": "pay",
+      "money": -1200,
+      "date": "2023-11-01 09:00:00",
+      "useFor": "rent",
+      "id": 95
+    },
+    {
+      "type": "pay",
+      "money": -1500,
+      "date": "2023-11-11 00:01:00",
+      "useFor": "shopping",
+      "id": 96
+    },
+    {
+      "type": "pay",
+      "money": -88,
+      "date": "2023-11-15 10:37:51",
+      "useFor": "longdistance",
+      "id": 97
+    },
+    {
+      "type": "pay",
+      "money": -60,
+      "date": "2023-11-23 08:40:15",
+      "useFor": "transport",
+      "id": 98
+    },
+    {
+      "type": "pay",
+      "money": -156.8,
+      "date": "2023-11-28 12:05:45",
+      "useFor": "food",
+      "id": 99
+    },
+    {
+      "type": "pay",
+      "money": -1200,
+      "date": "2023-12-01 09:00:00",
+      "useFor": "rent",
+      "id": 100
+    },
+    {
+      "type": "pay",
+      "money": -99,
+      "date": "2023-12-15 10:36:42",
+      "useFor": "drinks",
+      "id": 101
+    },
+    {
+      "type": "pay",
+      "money": -350,
+      "date": "2023-12-24 20:00:00",
+      "useFor": "entertainment",
+      "id": 102
+    },
+    {
+      "type": "pay",
+      "money": -210,
+      "date": "2023-12-25 18:40:22",
+      "useFor": "food",
+      "id": 103
+    },
+    {
+      "type": "pay",
+      "money": -1200,
+      "date": "2023-12-31 10:00:00",
+      "useFor": "rent",
+      "id": 104
+    }
+  ]
+}
