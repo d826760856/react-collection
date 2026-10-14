@@ -1,10 +1,13 @@
 import { Outlet } from "react-router-dom"
 import styles from './index.module.scss'
+import { BillProvider } from "./useBillContext"
 
 function Bill_layout() {
     return(
         <div className={styles.gateway}>
-            <Outlet></Outlet>
+            <BillProvider>
+                <Outlet></Outlet>
+            </BillProvider>
         </div>
     )
 }

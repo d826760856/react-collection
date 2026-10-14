@@ -6,3 +6,6 @@
     display: flex;
     flex-direction: column;
 }
+:global(.adm-picker-view-column-wheel) {
+    touch-action: none;
+}

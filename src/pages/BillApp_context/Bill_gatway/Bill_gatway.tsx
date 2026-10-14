@@ -3,8 +3,10 @@ import { TabBar } from 'antd-mobile'
 import { FolderOutline, AddCircleOutline, FileOutline } from 'antd-mobile-icons'
 import styles from './Bill_gatway.module.scss'
 import { Outlet } from 'react-router-dom'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
+import { useBill } from "../useBillContext"
+import type { billCtxType } from '../type'
 
 function Bill_gatway() {
     const tabs = [
@@ -20,6 +22,12 @@ function Bill_gatway() {
         setCurkey(key)
         navigate(key)
     }
+
+    const { getBillList } = useBill() as billCtxType
+    useEffect(() => {
+        getBillList()
+    }, [])
+
     return (
         <>
             <section className={styles.top}>
