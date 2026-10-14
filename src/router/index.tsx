@@ -15,6 +15,8 @@ import Bill_gatway from "@/pages/BillApp_context/Bill_gatway/Bill_gatway";
 import Bill_month from "@/pages/BillApp_context/Bill_gatway/Bill_month/Bill_month";
 import Bill_year from "@/pages/BillApp_context/Bill_gatway/Bill_year/Bill_year";
 
+import InputRef from "@/pages/test/inputRef";
+
 const router = createBrowserRouter([
     { path: '', element: <ContainBox></ContainBox>, children: [
         { index: true, element: <Todo_props></Todo_props> },
@@ -34,6 +36,7 @@ const router = createBrowserRouter([
                 ]
             }
         ]},
+        { path: 'inputRef', element: <InputRef></InputRef> }
     ]},
 ])
 
