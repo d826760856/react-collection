@@ -1,9 +1,13 @@
 import { createBrowserRouter } from "react-router-dom";
 import ContainBox from '@/pages/containBox'
+
 import Todo_props from '@/pages/todo'
 import Todo_context from '@/pages/todo_context'
 import Todo_redux from '@/pages/todo_redux'
+
 import Counter_redux from '@/pages/counter_redux'
+import Counter_useReducer from "@/pages/counter_useReducer";
+import Counter_zustand from "@/pages/counter_zustand";
 
 import Bill_App from "@/pages/BillApp_context"
 import Bill_edit from "@/pages/BillApp_context/Bill_edit/Bill_edit";
@@ -18,7 +22,9 @@ const router = createBrowserRouter([
         { path: 'todo_context', element: <Todo_context></Todo_context> },
         { path: 'todo_redux', element: <Todo_redux></Todo_redux> },
         { path: 'counter_redux', element: <Counter_redux></Counter_redux> },
-        { path: 'bill_zustand', element: <Bill_App></Bill_App>, children: [
+        { path: 'counter_useReducer', element: <Counter_useReducer></Counter_useReducer> },
+        { path: 'counter_zustand', element: <Counter_zustand></Counter_zustand> },
+        { path: 'bill_context', element: <Bill_App></Bill_App>, children: [
             { index: true, element: <Bill_gatway></Bill_gatway> },
             { path: 'edit', element: <Bill_edit></Bill_edit> },
             { path: 'gatway', element: <Bill_gatway></Bill_gatway>, children: [
@@ -28,8 +34,6 @@ const router = createBrowserRouter([
                 ]
             }
         ]},
-
-
     ]},
 ])
 

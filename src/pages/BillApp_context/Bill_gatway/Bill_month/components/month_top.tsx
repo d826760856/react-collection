@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'react'
+import { useMemo, useState } from 'react'
 import styles from './month_top.module.scss'
 import { DownOutline, UpOutline } from 'antd-mobile-icons'
 import { DatePicker } from 'antd-mobile'
@@ -12,9 +12,10 @@ type DatePickerPropsType = {
     onDateChange: (date: PickerDate) => void
 }
 
-function DatePicker_bill(props: DatePickerPropsType) {
+const DatePicker_bill = (props: DatePickerPropsType) => {
     const { curDate, onDateChange } = props
     const [isPicking, setIspicking] = useState(false)
+    
     const { dateText } = useMemo(()=>({ dateText: dayjs(curDate).format('YYYY | M') }), [curDate])
     return(
         <>
@@ -27,7 +28,6 @@ function DatePicker_bill(props: DatePickerPropsType) {
                 </div>
             </div>
             <DatePicker
-                style={{ touchAction : 'none'}}
                 value={curDate}
                 visible={isPicking}
                 onClose={() => {
@@ -84,7 +84,7 @@ function Month_top() {
     return(
         <div className={styles.month_top}>
             <DatePicker_bill curDate={curDate}
-                onDateChange={(date) => setCurDate(date)}>
+                onDateChange={setCurDate}>
             </DatePicker_bill>
             <div className={styles.numViewRow}>
                 { monthStastic.map(item => <NumView key={item.type} num={item.num} type={item.type}></NumView>) }

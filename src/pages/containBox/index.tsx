@@ -6,7 +6,7 @@ import { Outlet } from 'react-router-dom'
 
 type NavOptionsType = '/todo_props'
   | '/todo_context' | '/todo_redux' 
-  | '/counter_redux' | '/billGatway' | '/bill_zustand/gatway'
+  | '/counter_redux' | '/billGatway' | '/bill_context/gatway'
 
 type TabsType = {
   key: NavOptionsType,
@@ -21,7 +21,7 @@ function ContainBox() {
     { key: '/todo_context', title: 'Todo_context', },
     { key: '/todo_redux', title: 'Todo_redux', },
     { key: '/counter_redux', title: 'Counter_redux', },
-    { key: '/bill_zustand/gatway', title: 'Bill_zustand', },
+    { key: '/bill_context/gatway', title: 'Bill_context', },
   ]
   
   const navigate = useNavigate()

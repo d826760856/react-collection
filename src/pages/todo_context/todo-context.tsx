@@ -42,7 +42,7 @@ export const TodoProvider = (props: TodoProviderProps) => {
             { id: 3, text: 'Todo 3', isDone: false },
             { id: 4, text: 'Todo 4', isDone: false },
         ]
-        const todoListData = await new Promise((resolve, reject) => {
+        const todoListData = await new Promise((resolve) => {
             setTimeout(() => {
                 resolve(fixTodoList)
             }, 2000)
