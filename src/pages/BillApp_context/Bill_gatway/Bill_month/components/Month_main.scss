@@ -1,0 +1,38 @@
+.month_main {
+    margin-top: 10px;
+    padding: 10px 0;
+    height: 100%;
+    overflow: auto;
+    scrollbar-width: none;
+    .dayBill {
+        margin-bottom: 10px;
+    }
+    .dayBill_top {
+        height: 80px;
+        background-color: #eee;
+        border-radius: 15px;
+        padding: 10px 20px;
+        .topRow {
+            display: flex;
+            justify-content: space-between;
+            span {
+                font-size: 14px;
+                font-weight: 700;
+            }
+        }
+
+        &.expand {
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+            border-bottom: 1px solid #ccc;
+        }
+    }
+    .dayBill_expand {
+        height: 100px;
+        background-color: #eee;
+        &.expand {
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+        }
+    }
+}
