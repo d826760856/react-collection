@@ -1,13 +1,13 @@
 import { createBrowserRouter } from "react-router-dom";
-import ContainBox from '@/pages/containBox'
+import ContainBox from '@/pages'
 
-import Todo_props from '@/pages/todo'
+import Todo_props from '@/pages/todo_props'
 import Todo_context from '@/pages/todo_context'
 import Todo_redux from '@/pages/todo_redux'
 
-import Counter_redux from '@/pages/counter_redux'
-import Counter_useReducer from "@/pages/counter_useReducer";
-import Counter_zustand from "@/pages/counter_zustand";
+import Counter_redux from '@/pages/counter/redux'
+import Counter_useReducer from "@/pages/counter/useReducer";
+import Counter_zustand from "@/pages/counter/zustand";
 
 import Bill_App from "@/pages/BillApp_context"
 import Bill_edit from "@/pages/BillApp_context/Bill_edit/Bill_edit";

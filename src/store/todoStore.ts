@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import type { TodoItemType } from '../todo_redux/todotypes'
+import type { TodoItemType } from '../pages/todo_redux/todotypes'
 import { createAsyncThunk } from "@reduxjs/toolkit";
 import { isPending } from "@reduxjs/toolkit";
 

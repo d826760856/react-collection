@@ -1,7 +1,7 @@
 
 import { useEffect } from 'react';
-import { useStore } from '../hooks/useStore.ts';
-import { increment, decrement, addNum, getChannelList } from '../store/counterStore.ts'
+import { useStore } from '../../hooks/useStore.ts';
+import { increment, decrement, addNum, getChannelList } from '../../store/counterStore.ts'
 
 function Counter() {
     const { useAppSelector, useAppDispatch } = useStore()

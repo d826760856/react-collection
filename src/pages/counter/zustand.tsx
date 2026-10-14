@@ -1,5 +1,5 @@
 import { useEffect } from "react"
-import useStore from "./counter_zustand_Store"
+import useStore from "./zustand_Store"
 
 function Counter_zustand() {
     const { count, inc, posts, getPosts } = useStore()
