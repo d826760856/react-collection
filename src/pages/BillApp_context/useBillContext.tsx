@@ -48,6 +48,7 @@ export const BillProvider = (props: BillProviderProps) => {
     const addBill = useCallback(async (bill: billItemType) => {
         const res = await axios.post('http://localhost:3000/bill', bill)
         console.log(res.data)
+        getBillList()
     },[])
 
     const value = useMemo(

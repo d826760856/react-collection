@@ -49,7 +49,7 @@ function Bill_edit() {
     const todyText = useRef(dayjs(new Date()).format('YYYY-MM-DD')).current
     const pickerText = dayjs(curDate).format('YYYY-MM-DD')
 
-    const { typeCollection, addBill, getBillList } = useBill()
+    const { typeCollection, addBill } = useBill()
     const curTypeSections = typeCollection[billClass]
 
     const [ curBillType, setCurBillType ] = useState('') //当前账单用途
@@ -69,7 +69,7 @@ function Bill_edit() {
         const data = {
             type: billClass,
             money,
-            date: dayjs(new Date()).format('YYYY-MM-DD HH:mm:ss'),
+            date: dayjs(curDate).format('YYYY-MM-DD HH:mm:ss'),
             useFor: curBillType,
             id: Date.now() + ''
         }
@@ -78,9 +78,8 @@ function Bill_edit() {
         }else{
             addBill(data)
             navigate('/bill_context/gatway/month')
-            getBillList()
         }
-    }, [billClass, inputVal, curBillType]) 
+    }, [billClass, inputVal, curBillType, curDate]) 
 
     return (
         <div className="billEdit">
