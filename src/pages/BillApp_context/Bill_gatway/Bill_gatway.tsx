@@ -10,9 +10,9 @@ import type { billCtxType } from '../type'
 
 function Bill_gatway() {
     const tabs = [
-        { key: '/bill_zustand/gatway/month', title: '月度收支', icon: <FolderOutline /> },
-        { key: '/bill_zustand/edit', title: '记账', icon: <AddCircleOutline /> },
-        { key: '/bill_zustand/gatway/year', title: '年度账单', icon: <FileOutline /> }
+        { key: '/bill_context/gatway/month', title: '月度收支', icon: <FolderOutline /> },
+        { key: '/bill_context/edit', title: '记账', icon: <AddCircleOutline /> },
+        { key: '/bill_context/gatway/year', title: '年度账单', icon: <FileOutline /> }
     ]
 
     const [curkey, setCurkey] = useState(tabs[0].key)
