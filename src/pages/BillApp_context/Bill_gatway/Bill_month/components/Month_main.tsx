@@ -16,11 +16,13 @@ type DayBill_expandPropsType = {
 
 function DayBill_expand(props: DayBill_expandPropsType) {
     const { isExpand, dayBillList } = props
+    const { typeKeyObj } = useBill()
+    
     return(
         <div className={classNames('dayBill_expand', isExpand ? 'expand' : '')}>
             { dayBillList.map(dayBillItem =>
                 <div className="daybillRow" key={dayBillItem.id}>
-                    <span className='useFor'>{dayBillItem.useFor}</span>
+                    <span className='useFor'>{typeKeyObj[dayBillItem.useFor].name}</span>
                     <span className='num'>{dayBillItem.money}</span>
                 </div>
             ) }

@@ -16,6 +16,14 @@ export type YearDataMap = Record<Year, billItemType[]>;
 export type MonthDataMap = Record<YearMonth, billItemType[]>;
 export type DayDataMap = Record<YearMonthDay, billItemType[]>;
 
+export type TypeKeyObjItem = {
+    name: string,
+    type: string,
+    category: string
+}
+
+export type TypeKeyObj = Record<string, TypeKeyObjItem>
+
 export type billItemType = {
     type: string,
     money: number,
@@ -24,9 +32,23 @@ export type billItemType = {
     id: string
 }
 
+export type billtypeItemType = {
+    type: string, name: string, list?: billtypeItemType[]
+}
+
+export type billtypeCollection = {
+    income: billtypeItemType[], pay: billtypeItemType[]
+}
+
 export type billCtxType = {
     billList: billItemType[]
     yearObj: YearDataMap
     monthObj: MonthDataMap
-    getBillList: () => void
+    typeCollection: billtypeCollection
+    typeKeyObj: TypeKeyObj
+    getBillList: () => Promise<void>
+    getBillType: () => Promise<void>
+    getTypeKeyObj: () => Promise<void>
+    addBill: (bill: billItemType) => Promise<void>
 }
+

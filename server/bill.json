@@ -5,19 +5,40 @@
         "type": "professional",
         "name": "职业收入",
         "list": [
-          { "type": "salary", "name": "工资" },
-          { "type": "overtimepay", "name": "加班" },
-          { "type": "bonus", "name": "奖金" },
-          { "type": "parttime", "name": "兼职" }
+          {
+            "type": "salary",
+            "name": "工资"
+          },
+          {
+            "type": "overtimepay",
+            "name": "加班"
+          },
+          {
+            "type": "bonus",
+            "name": "奖金"
+          },
+          {
+            "type": "parttime",
+            "name": "兼职"
+          }
         ]
       },
       {
         "type": "other",
         "name": "其他收入",
         "list": [
-          { "type": "financial", "name": "理财收入" },
-          { "type": "cashgift", "name": "礼金收入" },
-          { "type": "redpacket", "name": "红包" }
+          {
+            "type": "financial",
+            "name": "理财收入"
+          },
+          {
+            "type": "cashgift",
+            "name": "礼金收入"
+          },
+          {
+            "type": "redpacket",
+            "name": "红包"
+          }
         ]
       }
     ],
@@ -26,66 +47,181 @@
         "type": "foods",
         "name": "餐饮",
         "list": [
-          { "type": "food", "name": "餐费" },
-          { "type": "drinks", "name": "酒水饮料" },
-          { "type": "dessert", "name": "甜品零食" }
+          {
+            "type": "food",
+            "name": "餐费"
+          },
+          {
+            "type": "drinks",
+            "name": "酒水饮料"
+          },
+          {
+            "type": "dessert",
+            "name": "甜品零食"
+          }
         ]
       },
       {
         "type": "taxi",
         "name": "出行交通",
         "list": [
-          { "type": "taxi", "name": "打车租车" },
-          { "type": "transport", "name": "公共交通" },
-          { "type": "longdistance", "name": "旅行票费" }
+          {
+            "type": "taxi",
+            "name": "打车租车"
+          },
+          {
+            "type": "transport",
+            "name": "公共交通"
+          },
+          {
+            "type": "longdistance",
+            "name": "旅行票费"
+          }
         ]
       },
       {
         "type": "recreation",
         "name": "休闲娱乐",
         "list": [
-          { "type": "bodybuilding", "name": "运动健身" },
-          { "type": "game", "name": "休闲玩乐" },
-          { "type": "audio", "name": "媒体影音" },
-          { "type": "travel", "name": "旅游度假" },
-          { "type": "entertainment", "name": "娱乐消费" }
+          {
+            "type": "bodybuilding",
+            "name": "运动健身"
+          },
+          {
+            "type": "game",
+            "name": "休闲玩乐"
+          },
+          {
+            "type": "audio",
+            "name": "媒体影音"
+          },
+          {
+            "type": "travel",
+            "name": "旅游度假"
+          },
+          {
+            "type": "entertainment",
+            "name": "娱乐消费"
+          }
         ]
       },
       {
         "type": "living",
         "name": "居家生活",
         "list": [
-          { "type": "rent", "name": "房租" },
-          { "type": "shopping", "name": "购物" }
+          {
+            "type": "rent",
+            "name": "房租"
+          },
+          {
+            "type": "shopping",
+            "name": "购物"
+          }
         ]
       }
     ]
   },
   "billItemKey": {
-    "salary": { "name": "工资", "type": "income", "category": "professional" },
-    "bonus": { "name": "奖金", "type": "income", "category": "professional" },
-    "parttime": { "name": "兼职", "type": "income", "category": "professional" },
-    "overtimepay": { "name": "加班", "type": "income", "category": "professional" },
-    "redpacket": { "name": "红包", "type": "income", "category": "other" },
-    "financial": { "name": "理财收入", "type": "income", "category": "other" },
-    "cashgift": { "name": "礼金收入", "type": "income", "category": "other" },
-
-    "food": { "name": "餐费", "type": "pay", "category": "foods" },
-    "drinks": { "name": "酒水饮料", "type": "pay", "category": "foods" },
-    "dessert": { "name": "甜品零食", "type": "pay", "category": "foods" },
-    
-    "transport": { "name": "公共交通", "type": "pay", "category": "taxi" },
-    "taxi": { "name": "打车租车", "type": "pay", "category": "taxi" },
-    "longdistance": { "name": "旅行票费", "type": "pay", "category": "taxi" },
-    
-    "entertainment": { "name": "娱乐消费", "type": "pay", "category": "recreation" },
-    "travel": { "name": "旅游度假", "type": "pay", "category": "recreation" },
-    "bodybuilding": { "name": "运动健身", "type": "pay", "category": "recreation" },
-    "game": { "name": "休闲玩乐", "type": "pay", "category": "recreation" },
-    "audio": { "name": "媒体影音", "type": "pay", "category": "recreation" },
-    
-    "rent": { "name": "房租", "type": "pay", "category": "living" },
-    "shopping": { "name": "购物", "type": "pay", "category": "living" }
+    "salary": {
+      "name": "工资",
+      "type": "income",
+      "category": "professional"
+    },
+    "bonus": {
+      "name": "奖金",
+      "type": "income",
+      "category": "professional"
+    },
+    "parttime": {
+      "name": "兼职",
+      "type": "income",
+      "category": "professional"
+    },
+    "overtimepay": {
+      "name": "加班",
+      "type": "income",
+      "category": "professional"
+    },
+    "redpacket": {
+      "name": "红包",
+      "type": "income",
+      "category": "other"
+    },
+    "financial": {
+      "name": "理财收入",
+      "type": "income",
+      "category": "other"
+    },
+    "cashgift": {
+      "name": "礼金收入",
+      "type": "income",
+      "category": "other"
+    },
+    "food": {
+      "name": "餐费",
+      "type": "pay",
+      "category": "foods"
+    },
+    "drinks": {
+      "name": "酒水饮料",
+      "type": "pay",
+      "category": "foods"
+    },
+    "dessert": {
+      "name": "甜品零食",
+      "type": "pay",
+      "category": "foods"
+    },
+    "transport": {
+      "name": "公共交通",
+      "type": "pay",
+      "category": "taxi"
+    },
+    "taxi": {
+      "name": "打车租车",
+      "type": "pay",
+      "category": "taxi"
+    },
+    "longdistance": {
+      "name": "旅行票费",
+      "type": "pay",
+      "category": "taxi"
+    },
+    "entertainment": {
+      "name": "娱乐消费",
+      "type": "pay",
+      "category": "recreation"
+    },
+    "travel": {
+      "name": "旅游度假",
+      "type": "pay",
+      "category": "recreation"
+    },
+    "bodybuilding": {
+      "name": "运动健身",
+      "type": "pay",
+      "category": "recreation"
+    },
+    "game": {
+      "name": "休闲玩乐",
+      "type": "pay",
+      "category": "recreation"
+    },
+    "audio": {
+      "name": "媒体影音",
+      "type": "pay",
+      "category": "recreation"
+    },
+    "rent": {
+      "name": "房租",
+      "type": "pay",
+      "category": "living"
+    },
+    "shopping": {
+      "name": "购物",
+      "type": "pay",
+      "category": "living"
+    }
   },
   "bill": [
     {
@@ -93,798 +229,743 @@
       "money": 15000,
       "date": "2025-01-10 10:00:00",
       "useFor": "salary",
-      "id": 1
+      "id": "1"
     },
     {
       "type": "income",
       "money": 5000,
       "date": "2025-01-15 14:30:00",
       "useFor": "bonus",
-      "id": 2
+      "id": "2"
     },
     {
       "type": "pay",
       "money": -1200,
       "date": "2025-01-01 09:00:00",
       "useFor": "rent",
-      "id": 3
+      "id": "3"
     },
     {
       "type": "pay",
       "money": -150,
       "date": "2025-01-05 12:30:00",
       "useFor": "food",
-      "id": 4
+      "id": "4"
     },
     {
       "type": "pay",
       "money": -45,
       "date": "2025-01-20 08:15:30",
       "useFor": "transport",
-      "id": 5
+      "id": "5"
     },
     {
       "type": "income",
       "money": 15000,
       "date": "2025-02-10 10:00:00",
       "useFor": "salary",
-      "id": 6
+      "id": "6"
     },
     {
       "type": "pay",
       "money": -1200,
       "date": "2025-02-01 09:00:00",
       "useFor": "rent",
-      "id": 7
+      "id": "7"
     },
     {
       "type": "pay",
       "money": -280,
       "date": "2025-02-14 18:30:00",
       "useFor": "food",
-      "id": 8
+      "id": "8"
     },
     {
       "type": "income",
       "money": 200,
       "date": "2025-02-25 20:00:00",
       "useFor": "redpacket",
-      "id": 9
+      "id": "9"
     },
     {
       "type": "pay",
       "money": -68.5,
       "date": "2025-02-18 14:20:00",
       "useFor": "drinks",
-      "id": 10
+      "id": "10"
     },
     {
       "type": "income",
       "money": 15000,
       "date": "2025-03-10 10:00:00",
       "useFor": "salary",
-      "id": 11
+      "id": "11"
     },
     {
       "type": "pay",
       "money": -1200,
       "date": "2025-03-01 09:00:00",
       "useFor": "rent",
-      "id": 12
+      "id": "12"
     },
     {
       "type": "pay",
       "money": -230,
       "date": "2025-03-15 19:10:05",
       "useFor": "food",
-      "id": 13
+      "id": "13"
     },
     {
       "type": "pay",
       "money": -120,
       "date": "2025-03-22 08:40:15",
       "useFor": "transport",
-      "id": 14
+      "id": "14"
     },
     {
       "type": "income",
       "money": 15000,
       "date": "2025-04-10 10:00:00",
       "useFor": "salary",
-      "id": 15
+      "id": "15"
     },
     {
       "type": "pay",
       "money": -1200,
       "date": "2025-04-01 09:00:00",
       "useFor": "rent",
-      "id": 16
+      "id": "16"
     },
     {
       "type": "pay",
       "money": -1500,
       "date": "2025-04-04 10:00:00",
       "useFor": "travel",
-      "id": 17
+      "id": "17"
     },
     {
       "type": "pay",
       "money": -320,
       "date": "2025-04-18 20:00:00",
       "useFor": "entertainment",
-      "id": 18
+      "id": "18"
     },
     {
       "type": "pay",
       "money": -145,
       "date": "2025-04-25 12:30:45",
       "useFor": "food",
-      "id": 19
+      "id": "19"
     },
     {
       "type": "income",
       "money": 15000,
       "date": "2025-05-10 10:00:00",
       "useFor": "salary",
-      "id": 20
+      "id": "20"
     },
     {
       "type": "income",
       "money": 800,
       "date": "2025-05-20 16:00:00",
       "useFor": "parttime",
-      "id": 21
+      "id": "21"
     },
     {
       "type": "pay",
       "money": -1200,
       "date": "2025-05-01 09:00:00",
       "useFor": "rent",
-      "id": 22
+      "id": "22"
     },
     {
       "type": "pay",
       "money": -66.6,
       "date": "2025-05-05 15:22:18",
       "useFor": "drinks",
-      "id": 23
+      "id": "23"
     },
     {
       "type": "pay",
       "money": -520,
       "date": "2025-05-12 14:45:00",
       "useFor": "shopping",
-      "id": 24
+      "id": "24"
     },
     {
       "type": "income",
       "money": 15000,
       "date": "2025-06-10 10:00:00",
       "useFor": "salary",
-      "id": 25
+      "id": "25"
     },
     {
       "type": "pay",
       "money": -1200,
       "date": "2025-06-01 09:00:00",
       "useFor": "rent",
-      "id": 26
+      "id": "26"
     },
     {
       "type": "pay",
       "money": -99,
       "date": "2025-06-18 10:36:42",
       "useFor": "drinks",
-      "id": 27
+      "id": "27"
     },
     {
       "type": "pay",
       "money": -188,
       "date": "2025-06-25 20:30:00",
       "useFor": "entertainment",
-      "id": 28
+      "id": "28"
     },
     {
       "type": "income",
       "money": 15000,
       "date": "2025-07-10 10:00:00",
       "useFor": "salary",
-      "id": 29
+      "id": "29"
     },
     {
       "type": "pay",
       "money": -1200,
       "date": "2025-07-01 09:00:00",
       "useFor": "rent",
-      "id": 30
+      "id": "30"
     },
     {
       "type": "pay",
       "money": -78.5,
       "date": "2025-07-08 12:30:45",
       "useFor": "drinks",
-      "id": 31
+      "id": "31"
     },
     {
       "type": "pay",
       "money": -88,
       "date": "2025-07-15 10:37:51",
       "useFor": "longdistance",
-      "id": 32
+      "id": "32"
     },
     {
       "type": "pay",
       "money": -350,
       "date": "2025-07-22 19:45:00",
       "useFor": "food",
-      "id": 33
+      "id": "33"
     },
     {
       "type": "income",
       "money": 15000,
       "date": "2025-08-10 10:00:00",
       "useFor": "salary",
-      "id": 34
+      "id": "34"
     },
     {
       "type": "pay",
       "money": -1200,
       "date": "2025-08-01 09:00:00",
       "useFor": "rent",
-      "id": 35
+      "id": "35"
     },
     {
       "type": "pay",
       "money": -2500,
       "date": "2025-08-10 10:00:00",
       "useFor": "travel",
-      "id": 36
+      "id": "36"
     },
     {
       "type": "pay",
       "money": -55,
       "date": "2025-08-18 10:36:42",
       "useFor": "drinks",
-      "id": 37
+      "id": "37"
     },
     {
       "type": "pay",
       "money": -450,
       "date": "2025-08-25 00:05:12",
       "useFor": "shopping",
-      "id": 38
+      "id": "38"
     },
     {
       "type": "income",
       "money": 15000,
       "date": "2025-09-10 10:00:00",
       "useFor": "salary",
-      "id": 39
+      "id": "39"
     },
     {
       "type": "pay",
       "money": -1200,
       "date": "2025-09-01 09:00:00",
       "useFor": "rent",
-      "id": 40
+      "id": "40"
     },
     {
       "type": "pay",
       "money": -45,
       "date": "2025-09-10 08:30:15",
       "useFor": "transport",
-      "id": 41
+      "id": "41"
     },
     {
       "type": "pay",
       "money": -156.8,
       "date": "2025-09-18 12:05:45",
       "useFor": "food",
-      "id": 42
+      "id": "42"
     },
     {
       "type": "pay",
       "money": -320,
       "date": "2025-09-28 19:45:00",
       "useFor": "entertainment",
-      "id": 43
+      "id": "43"
     },
     {
       "type": "income",
       "money": 15000,
       "date": "2025-10-10 10:00:00",
       "useFor": "salary",
-      "id": 44
+      "id": "44"
     },
     {
       "type": "income",
       "money": 500,
       "date": "2025-10-01 12:00:00",
       "useFor": "redpacket",
-      "id": 45
+      "id": "45"
     },
     {
       "type": "pay",
       "money": -1200,
       "date": "2025-10-01 09:00:00",
       "useFor": "rent",
-      "id": 46
+      "id": "46"
     },
     {
       "type": "pay",
       "money": -3500,
       "date": "2025-10-05 11:00:00",
       "useFor": "travel",
-      "id": 47
+      "id": "47"
     },
     {
       "type": "pay",
       "money": -220,
       "date": "2025-10-28 18:40:22",
       "useFor": "food",
-      "id": 48
+      "id": "48"
     },
     {
       "type": "income",
       "money": 15000,
       "date": "2025-11-10 10:00:00",
       "useFor": "salary",
-      "id": 49
+      "id": "49"
     },
     {
       "type": "pay",
       "money": -1200,
       "date": "2025-11-01 09:00:00",
       "useFor": "rent",
-      "id": 50
+      "id": "50"
     },
     {
       "type": "pay",
       "money": -1800,
       "date": "2025-11-11 00:01:00",
       "useFor": "shopping",
-      "id": 51
+      "id": "51"
     },
     {
       "type": "pay",
       "money": -88,
       "date": "2025-11-15 10:37:51",
       "useFor": "longdistance",
-      "id": 52
+      "id": "52"
     },
     {
       "type": "pay",
       "money": -60,
       "date": "2025-11-25 08:40:15",
       "useFor": "transport",
-      "id": 53
+      "id": "53"
     },
     {
       "type": "income",
       "money": 15000,
       "date": "2025-12-10 10:00:00",
       "useFor": "salary",
-      "id": 54
+      "id": "54"
     },
     {
       "type": "income",
       "money": 8000,
       "date": "2025-12-31 10:00:00",
       "useFor": "bonus",
-      "id": 55
+      "id": "55"
     },
     {
       "type": "pay",
       "money": -1200,
       "date": "2025-12-01 09:00:00",
       "useFor": "rent",
-      "id": 56
+      "id": "56"
     },
     {
       "type": "pay",
       "money": -350,
       "date": "2025-12-24 20:00:00",
       "useFor": "entertainment",
-      "id": 57
+      "id": "57"
     },
     {
       "type": "pay",
       "money": -210,
       "date": "2025-12-25 18:40:22",
       "useFor": "food",
-      "id": 58
+      "id": "58"
     },
     {
       "type": "income",
       "money": 15500,
       "date": "2026-01-10 10:00:00",
       "useFor": "salary",
-      "id": 59
+      "id": "59"
     },
     {
       "type": "pay",
       "money": -1200,
       "date": "2026-01-01 09:00:00",
       "useFor": "rent",
-      "id": 60
+      "id": "60"
     },
     {
       "type": "pay",
       "money": -68.5,
       "date": "2026-01-08 14:20:00",
       "useFor": "drinks",
-      "id": 61
+      "id": "61"
     },
     {
       "type": "pay",
       "money": -299,
       "date": "2026-01-15 20:11:32",
       "useFor": "shopping",
-      "id": 62
+      "id": "62"
     },
     {
       "type": "pay",
       "money": -145,
       "date": "2026-01-25 12:45:00",
       "useFor": "food",
-      "id": 63
+      "id": "63"
     },
     {
       "type": "income",
       "money": 15500,
       "date": "2026-02-10 10:00:00",
       "useFor": "salary",
-      "id": 64
+      "id": "64"
     },
     {
       "type": "income",
       "money": 200,
       "date": "2026-02-15 12:00:00",
       "useFor": "redpacket",
-      "id": 65
+      "id": "65"
     },
     {
       "type": "pay",
       "money": -1200,
       "date": "2026-02-01 09:00:00",
       "useFor": "rent",
-      "id": 66
+      "id": "66"
     },
     {
       "type": "pay",
       "money": -1500,
       "date": "2026-02-14 10:00:00",
       "useFor": "longdistance",
-      "id": 67
+      "id": "67"
     },
     {
       "type": "pay",
       "money": -320,
       "date": "2026-02-18 19:45:00",
       "useFor": "entertainment",
-      "id": 68
+      "id": "68"
     },
     {
       "type": "income",
       "money": 15500,
       "date": "2026-03-10 10:00:00",
       "useFor": "salary",
-      "id": 69
+      "id": "69"
     },
     {
       "type": "pay",
       "money": -1200,
       "date": "2026-03-01 09:00:00",
       "useFor": "rent",
-      "id": 70
+      "id": "70"
     },
     {
       "type": "pay",
       "money": -52,
       "date": "2026-03-10 08:40:15",
       "useFor": "transport",
-      "id": 71
+      "id": "71"
     },
     {
       "type": "pay",
       "money": -55,
       "date": "2026-03-18 10:36:42",
       "useFor": "drinks",
-      "id": 72
+      "id": "72"
     },
     {
       "type": "pay",
       "money": -156.8,
       "date": "2026-03-28 12:05:45",
       "useFor": "food",
-      "id": 73
+      "id": "73"
     },
     {
       "type": "income",
       "money": 15500,
       "date": "2026-04-10 10:00:00",
       "useFor": "salary",
-      "id": 74
+      "id": "74"
     },
     {
       "type": "income",
       "money": 1000,
       "date": "2026-04-20 16:00:00",
       "useFor": "parttime",
-      "id": 75
+      "id": "75"
     },
     {
       "type": "pay",
       "money": -1200,
       "date": "2026-04-01 09:00:00",
       "useFor": "rent",
-      "id": 76
+      "id": "76"
     },
     {
       "type": "pay",
       "money": -2800,
       "date": "2026-04-05 10:00:00",
       "useFor": "travel",
-      "id": 77
+      "id": "77"
     },
     {
       "type": "pay",
       "money": -480,
       "date": "2026-04-15 14:45:00",
       "useFor": "shopping",
-      "id": 78
+      "id": "78"
     },
     {
       "type": "income",
       "money": 15500,
       "date": "2026-05-10 10:00:00",
       "useFor": "salary",
-      "id": 79
+      "id": "79"
     },
     {
       "type": "pay",
       "money": -1200,
       "date": "2026-05-01 09:00:00",
       "useFor": "rent",
-      "id": 80
+      "id": "80"
     },
     {
       "type": "pay",
       "money": -78.5,
       "date": "2026-05-15 12:30:45",
       "useFor": "drinks",
-      "id": 81
+      "id": "81"
     },
     {
       "type": "pay",
       "money": -230,
       "date": "2026-05-25 18:20:30",
       "useFor": "food",
-      "id": 82
+      "id": "82"
     },
     {
       "type": "income",
       "money": 15500,
       "date": "2026-06-10 10:00:00",
       "useFor": "salary",
-      "id": 83
+      "id": "83"
     },
     {
       "type": "pay",
       "money": -1200,
       "date": "2026-06-01 09:00:00",
       "useFor": "rent",
-      "id": 84
+      "id": "84"
     },
     {
       "type": "pay",
       "money": -99,
       "date": "2026-06-18 10:36:42",
       "useFor": "drinks",
-      "id": 85
+      "id": "85"
     },
     {
       "type": "pay",
       "money": -145,
       "date": "2026-06-25 12:45:00",
       "useFor": "food",
-      "id": 86
+      "id": "86"
     },
     {
       "type": "income",
       "money": 15500,
       "date": "2026-07-10 10:00:00",
       "useFor": "salary",
-      "id": 87
+      "id": "87"
     },
     {
       "type": "pay",
       "money": -1200,
       "date": "2026-07-01 09:00:00",
       "useFor": "rent",
-      "id": 88
+      "id": "88"
     },
     {
       "type": "pay",
       "money": -68,
       "date": "2026-07-12 14:20:00",
       "useFor": "drinks",
-      "id": 89
+      "id": "89"
     },
     {
       "type": "pay",
       "money": -520,
       "date": "2026-07-20 14:45:00",
       "useFor": "shopping",
-      "id": 90
+      "id": "90"
     },
     {
       "type": "pay",
       "money": -210,
       "date": "2026-07-28 18:40:22",
       "useFor": "food",
-      "id": 91
+      "id": "91"
     },
     {
       "type": "income",
       "money": 15500,
       "date": "2026-08-10 10:00:00",
       "useFor": "salary",
-      "id": 92
+      "id": "92"
     },
     {
       "type": "pay",
       "money": -1200,
       "date": "2026-08-01 09:00:00",
       "useFor": "rent",
-      "id": 93
+      "id": "93"
     },
     {
       "type": "pay",
       "money": -3200,
       "date": "2026-08-08 10:00:00",
       "useFor": "travel",
-      "id": 94
+      "id": "94"
     },
     {
       "type": "pay",
       "money": -35.5,
       "date": "2026-08-15 08:15:30",
       "useFor": "transport",
-      "id": 95
+      "id": "95"
     },
     {
       "type": "pay",
       "money": -188,
       "date": "2026-08-22 20:30:00",
       "useFor": "entertainment",
-      "id": 96
+      "id": "96"
     },
     {
       "type": "income",
       "money": 15500,
       "date": "2026-09-10 10:00:00",
       "useFor": "salary",
-      "id": 97
+      "id": "97"
     },
     {
       "type": "income",
       "money": 300,
       "date": "2026-09-15 12:00:00",
       "useFor": "redpacket",
-      "id": 98
+      "id": "98"
     },
     {
       "type": "pay",
       "money": -1200,
       "date": "2026-09-01 09:00:00",
       "useFor": "rent",
-      "id": 99
+      "id": "99"
     },
     {
       "type": "pay",
       "money": -156.8,
       "date": "2026-09-28 12:05:45",
       "useFor": "food",
-      "id": 100
+      "id": "100"
     },
     {
       "type": "income",
       "money": 15500,
       "date": "2026-10-10 10:00:00",
       "useFor": "salary",
-      "id": 101
+      "id": "101"
     },
     {
       "type": "pay",
       "money": -1200,
       "date": "2026-10-01 09:00:00",
       "useFor": "rent",
-      "id": 102
+      "id": "102"
     },
     {
       "type": "pay",
       "money": -3600,
       "date": "2026-10-04 11:00:00",
       "useFor": "travel",
-      "id": 103
+      "id": "103"
     },
     {
       "type": "pay",
       "money": -78.5,
       "date": "2026-10-12 12:30:45",
       "useFor": "drinks",
-      "id": 104
+      "id": "104"
     },
     {
       "type": "pay",
-      "money": -350,
-      "date": "2026-10-28 20:00:00",
-      "useFor": "entertainment",
-      "id": 105
-    },
-    {
-      "type": "income",
-      "money": 15500,
-      "date": "2026-11-10 10:00:00",
-      "useFor": "salary",
-      "id": 106
+      "money": -34,
+      "date": "2026-10-15 22:05:00",
+      "useFor": "food",
+      "id": "O1CezZms3hU"
     },
     {
       "type": "pay",
-      "money": -1200,
-      "date": "2026-11-01 09:00:00",
-      "useFor": "rent",
-      "id": 107
-    },
-    {
-      "type": "pay",
-      "money": -2000,
-      "date": "2026-11-11 00:01:00",
-      "useFor": "shopping",
-      "id": 108
-    },
-    {
-      "type": "pay",
-      "money": -55,
-      "date": "2026-11-18 10:36:42",
-      "useFor": "drinks",
-      "id": 109
-    },
-    {
-      "type": "income",
-      "money": 15500,
-      "date": "2026-12-10 10:00:00",
-      "useFor": "salary",
-      "id": 110
-    },
-    {
-      "type": "income",
-      "money": 10000,
-      "date": "2026-12-31 10:00:00",
-      "useFor": "bonus",
-      "id": 111
-    },
-    {
-      "type": "pay",
-      "money": -1200,
-      "date": "2026-12-01 09:00:00",
-      "useFor": "rent",
-      "id": 112
-    },
-    {
-      "type": "pay",
-      "money": -680,
-      "date": "2026-12-30 14:45:00",
-      "useFor": "shopping",
-      "id": 113
-    },
-    {
-      "type": "pay",
-      "money": -99,
-      "date": "2026-12-31 10:36:42",
-      "useFor": "drinks",
-      "id": 114
+      "money": -17,
+      "date": "2026-10-15 22:07:17",
+      "useFor": "dessert",
+      "id": "Wa1VCs3awvo"
     }
-  ]
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }

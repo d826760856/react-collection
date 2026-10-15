@@ -2,11 +2,9 @@
 import { TabBar } from 'antd-mobile'
 import { FolderOutline, AddCircleOutline, FileOutline } from 'antd-mobile-icons'
 import styles from './Bill_gatway.module.scss'
-import { Outlet } from 'react-router-dom'
-import { useState, useEffect } from 'react'
+import { Outlet, useLocation } from 'react-router-dom'
+import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { useBill } from "../useBillContext"
-import type { billCtxType } from '../type'
 
 function Bill_gatway() {
     const tabs = [
@@ -14,19 +12,20 @@ function Bill_gatway() {
         { key: '/bill_context/edit', title: '记账', icon: <AddCircleOutline /> },
         { key: '/bill_context/gatway/year', title: '年度账单', icon: <FileOutline /> }
     ]
-
-    const [curkey, setCurkey] = useState(tabs[0].key)
+    const location = useLocation()
+    const getPathName = () => {
+        if(location.pathname === '/bill_context/gatway')
+            return '/bill_context/gatway/month'
+        else return location.pathname
+    }
+    
+    const [curkey, setCurkey] = useState(getPathName())
 
     const navigate = useNavigate()
     const onChange = (key: string) => {
         setCurkey(key)
         navigate(key)
     }
-
-    const { getBillList } = useBill() as billCtxType
-    useEffect(() => {
-        getBillList()
-    }, [])
 
     return (
         <>

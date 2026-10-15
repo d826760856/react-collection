@@ -1,6 +1,7 @@
 import axios from "axios";
 import React, { createContext, useCallback, useContext, useEffect, useMemo, useState } from "react";
-import type { billItemType, billCtxType, YearDataMap, MonthDataMap, DayDataMap } from './type'
+import type { billItemType, billCtxType, YearDataMap, MonthDataMap } from './type'
+import type { billtypeCollection, TypeKeyObj } from './type'
 import _ from 'lodash'
 import dayjs from "dayjs";
 
@@ -15,7 +16,10 @@ export const BillProvider = (props: BillProviderProps) => {
     const [ billList, setBillList ] = useState<billItemType[]>([])
     const [ yearObj, setYearObj ] = useState<YearDataMap>({})
     const [ monthObj, setMonthObj ] = useState<MonthDataMap>({})
-    // const [ dayObj, setDayObj ] = useState<DayDataMap>({})
+    const [ typeCollection, setTypeCollection ] = useState<billtypeCollection>(
+        { income: [], pay: [] }
+    ) //账单分类的所有用途
+    const [ typeKeyObj, setTypeKeyObj ] = useState<TypeKeyObj>({}) //账单所有用途的集合
     useEffect(() =>{
         const yearObj = _.groupBy(billList, (item) => dayjs(item.date).format('YYYY'))
         setYearObj(yearObj)
@@ -29,9 +33,31 @@ export const BillProvider = (props: BillProviderProps) => {
         setBillList(res.data)
     }, []) 
 
+    const getBillType = useCallback(async () => {
+        const res = await axios.get<billtypeCollection>('http://localhost:3000/billItmeType')
+        console.log(res.data);
+        setTypeCollection(res.data)
+    },[])
+
+    const getTypeKeyObj = useCallback(async () => {
+        const res = await axios.get<TypeKeyObj>('http://localhost:3000/billItemKey')
+        console.log(res.data)
+        setTypeKeyObj(res.data)
+    }, [])
+
+    const addBill = useCallback(async (bill: billItemType) => {
+        const res = await axios.post('http://localhost:3000/bill', bill)
+        console.log(res.data)
+    },[])
+
     const value = useMemo(
-        () => ({ billList, yearObj, monthObj, getBillList }),
-        [billList, yearObj, monthObj, getBillList]
+        () => ({
+            billList, yearObj, monthObj, typeCollection, typeKeyObj,
+            getBillList, getBillType, addBill, getTypeKeyObj
+        }),
+        [ billList, yearObj, monthObj, typeCollection, typeKeyObj,
+            getBillList, getBillType, addBill, getTypeKeyObj
+        ]
     )
     return (
         <ctx.Provider value={value}>
