@@ -1,0 +1,89 @@
+.billEdit {
+    padding: 10px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    .billEditTop {
+        height: 120px;
+        .btnRow {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 70px;
+            button {
+                font-size: 16px;
+                border-radius: 20px;
+                padding: 5px 10px;
+                border: none;
+                &:nth-child(1) {
+                    margin-right: 10px;
+                }
+                &.active {
+                    background-color: black;
+                    color: #fff;
+                }
+            }
+        }
+        .inputRow {
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            position: relative;
+            input {
+                outline: none;
+                width: 80%;
+                height: 100%;
+                border-radius: 5px;
+                border: 1px solid black;
+                font-size: 20px;
+                padding: 0 30px 0 136px;
+                text-align: right;
+                background-color: #eee;
+            }
+            /* Chrome、Safari、Edge、Opera */
+            input[type="number"]::-webkit-outer-spin-button,
+            input[type="number"]::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+            }
+
+            /* Firefox */
+            input[type="number"] {
+            -moz-appearance: textfield;
+            appearance: textfield;
+            }
+
+            .pickBtn {
+                position: absolute;
+                height: 30px;
+                background-color: #ccc;
+                border: none;
+                left: 45px;
+                top: 10px;
+                border-radius: 5px;
+                font-size: 16px;
+                text-align: left;
+                padding-left: 10px;
+                padding-right: 10px;
+                span {
+                    margin-left: 5px;
+                }
+            }
+            .yuan {
+                position: absolute;
+                font-size: 22px;
+                right: 50px;
+                top: 12px;
+            }
+
+        }
+    }
+    .billUseforMain {
+        flex: 1;
+        margin-top: 20px;
+        background-color: #eee;
+        border-radius: 15px;
+    }
+}

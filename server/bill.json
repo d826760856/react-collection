@@ -1,4 +1,92 @@
 {
+  "billItmeType": {
+    "income": [
+      {
+        "type": "professional",
+        "name": "职业收入",
+        "list": [
+          { "type": "salary", "name": "工资" },
+          { "type": "overtimepay", "name": "加班" },
+          { "type": "bonus", "name": "奖金" },
+          { "type": "parttime", "name": "兼职" }
+        ]
+      },
+      {
+        "type": "other",
+        "name": "其他收入",
+        "list": [
+          { "type": "financial", "name": "理财收入" },
+          { "type": "cashgift", "name": "礼金收入" },
+          { "type": "redpacket", "name": "红包" }
+        ]
+      }
+    ],
+    "pay": [
+      {
+        "type": "foods",
+        "name": "餐饮",
+        "list": [
+          { "type": "food", "name": "餐费" },
+          { "type": "drinks", "name": "酒水饮料" },
+          { "type": "dessert", "name": "甜品零食" }
+        ]
+      },
+      {
+        "type": "taxi",
+        "name": "出行交通",
+        "list": [
+          { "type": "taxi", "name": "打车租车" },
+          { "type": "transport", "name": "公共交通" },
+          { "type": "longdistance", "name": "旅行票费" }
+        ]
+      },
+      {
+        "type": "recreation",
+        "name": "休闲娱乐",
+        "list": [
+          { "type": "bodybuilding", "name": "运动健身" },
+          { "type": "game", "name": "休闲玩乐" },
+          { "type": "audio", "name": "媒体影音" },
+          { "type": "travel", "name": "旅游度假" },
+          { "type": "entertainment", "name": "娱乐消费" }
+        ]
+      },
+      {
+        "type": "living",
+        "name": "居家生活",
+        "list": [
+          { "type": "rent", "name": "房租" },
+          { "type": "shopping", "name": "购物" }
+        ]
+      }
+    ]
+  },
+  "billItemKey": {
+    "salary": { "name": "工资", "type": "income", "category": "professional" },
+    "bonus": { "name": "奖金", "type": "income", "category": "professional" },
+    "parttime": { "name": "兼职", "type": "income", "category": "professional" },
+    "overtimepay": { "name": "加班", "type": "income", "category": "professional" },
+    "redpacket": { "name": "红包", "type": "income", "category": "other" },
+    "financial": { "name": "理财收入", "type": "income", "category": "other" },
+    "cashgift": { "name": "礼金收入", "type": "income", "category": "other" },
+
+    "food": { "name": "餐费", "type": "pay", "category": "foods" },
+    "drinks": { "name": "酒水饮料", "type": "pay", "category": "foods" },
+    "dessert": { "name": "甜品零食", "type": "pay", "category": "foods" },
+    
+    "transport": { "name": "公共交通", "type": "pay", "category": "taxi" },
+    "taxi": { "name": "打车租车", "type": "pay", "category": "taxi" },
+    "longdistance": { "name": "旅行票费", "type": "pay", "category": "taxi" },
+    
+    "entertainment": { "name": "娱乐消费", "type": "pay", "category": "recreation" },
+    "travel": { "name": "旅游度假", "type": "pay", "category": "recreation" },
+    "bodybuilding": { "name": "运动健身", "type": "pay", "category": "recreation" },
+    "game": { "name": "休闲玩乐", "type": "pay", "category": "recreation" },
+    "audio": { "name": "媒体影音", "type": "pay", "category": "recreation" },
+    
+    "rent": { "name": "房租", "type": "pay", "category": "living" },
+    "shopping": { "name": "购物", "type": "pay", "category": "living" }
+  },
   "bill": [
     {
       "type": "income",
