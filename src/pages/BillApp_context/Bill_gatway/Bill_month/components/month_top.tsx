@@ -51,11 +51,14 @@ function NumView(props: NumViewPropsType) {
     )
 }
 
-function Month_top() {
-    const [curDate, setCurDate] = useState<PickerDate>(new Date())
+type Month_topPropsType = {
+    curDate: PickerDate,
+    onCurDateChange: (val: PickerDate) => void
+}
+function Month_top(props: Month_topPropsType) {
+    const { curDate, onCurDateChange } = props
     const { monthObj } =  useBill() as billCtxType
     const { monthStastic } = useMemo(() => {
-        console.log(555, monthObj)
         const monthKey = dayjs(curDate).format('YYYY-M') as YearMonth
         const monthData = monthObj[monthKey]
         let payData: billItemType[], pay: number,
@@ -84,7 +87,7 @@ function Month_top() {
     return(
         <div className={styles.month_top}>
             <DatePicker_bill curDate={curDate}
-                onDateChange={setCurDate}>
+                onDateChange={(val) => onCurDateChange(val)}>
             </DatePicker_bill>
             <div className={styles.numViewRow}>
                 { monthStastic.map(item => <NumView key={item.type} num={item.num} type={item.type}></NumView>) }

@@ -1,6 +1,12 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import './Month_main.scss'
 import classNames from 'classnames'
+import dayjs from 'dayjs'
+import _ from 'lodash'
+import { DownOutline, UpOutline } from 'antd-mobile-icons'
+import { useBill } from '@/pages/BillApp_context/useBillContext'
+import type { PickerDate } from 'antd-mobile/es/components/date-picker/util'
+import type { YearMonth, YearMonthDay, DayDataMap, billItemType } from '../../../type'
 
 
 function DayBill_expand({ isExpand }: { isExpand: boolean }) {
@@ -10,40 +16,85 @@ function DayBill_expand({ isExpand }: { isExpand: boolean }) {
     )
 }
 
-function DayBill_top({ isExpand }: { isExpand: boolean }) {
+type DayBill_topPropsType = {
+    curDate: YearMonthDay
+    isExpand: boolean
+    numStastic: {
+        coutcome: number
+        income: number
+        result: number
+    }
+}
+
+function DayBill_top(props: DayBill_topPropsType) {
+    const { isExpand, curDate, numStastic } = props
+    const split = curDate.split('-') as string[]
+    const curDate_format = `${split[1]}月${split[2]}日`
     return(
         <div className={classNames('dayBill_top', isExpand ? 'expand' : '')}>
             <div className="topRow">
-                <span>03月23日</span>
+                <span>{curDate_format}</span>
+                <div className="ArrowBox">
+                    { isExpand ? <UpOutline /> : <DownOutline /> }
+                </div>
             </div>
-            <div className="bottomRow"></div>
+            <div className="bottomRow">
+                <div className='numSection'>
+                    <div className='numPart'>
+                        <span className='red'>支出</span><span className='gray'>{numStastic.coutcome}</span>
+                    </div>
+                    <div className='numPart'>
+                        <span className='green'>收入</span><span className='gray'>{numStastic.income}</span>
+                    </div>
+                    <div className='numPart'>
+                        <span className='strong'>{numStastic.result}</span><span className='gray'>结余</span>
+                    </div>
+                </div>
+            </div>
         </div>
     )
 }
 
-function DayBill() {
+type DayBillPropsType = {
+    curDate: YearMonthDay
+    dayBillList: billItemType[]
+}
+
+function DayBill(props: DayBillPropsType) {
+    const { curDate, dayBillList } = props
     const [ isExpand, setIsExpand ] = useState(false)
+    const [ numStastic, setNumStastic ] = useState({ coutcome: 0, income: 0, result: 0 })
+    useEffect(() => {
+        const payData = dayBillList?.filter(item => item.type === 'pay')
+        const pay = payData?.reduce((a,b) => a + b.money, 0)
+        const incomeData = dayBillList?.filter(item => item.type === 'income')
+        const income = incomeData?.reduce((a,b) => a + b.money, 0)
+        setNumStastic({ coutcome: pay, income: income, result: pay + income })
+    }, [curDate, dayBillList])
     return(
-        <div className='dayBill'>
-            <DayBill_top isExpand={isExpand}></DayBill_top>
+        <div className='dayBill' onClick={() => setIsExpand(!isExpand)}>
+            <DayBill_top
+                isExpand={isExpand} curDate={curDate}
+                numStastic={numStastic}
+            ></DayBill_top>
             {isExpand && <DayBill_expand isExpand={isExpand}></DayBill_expand>}
         </div>
     )
 }
 
-function Month_main() {
+function Month_main({ curDate }: { curDate: PickerDate }) {
+    const { monthObj } = useBill()
+    const monthKey = dayjs(curDate).format('YYYY-M') as YearMonth
+    const dayList = monthObj[monthKey]
+    const dayObj = _.groupBy(dayList, item => dayjs(item.date).format('YYYY-MM-DD')) as DayDataMap
+    const dayObjKeys = Object.keys(dayObj) as YearMonthDay[]
+    console.log(333, dayObj, dayObjKeys);
+    
     return(
         <div className='month_main hide-scrollbar'>
-            <DayBill></DayBill>
-            <DayBill></DayBill>
-            <DayBill></DayBill>
-            <DayBill></DayBill>
-            <DayBill></DayBill>
-            <DayBill></DayBill>
-            <DayBill></DayBill>
-            <DayBill></DayBill>
-            <DayBill></DayBill>
-            <DayBill></DayBill>
+            { dayObjKeys.map((dayKey) =>
+                <DayBill key={dayKey} curDate={dayKey} dayBillList={dayObj[dayKey]}></DayBill>
+            )}
         </div>
     )
 }

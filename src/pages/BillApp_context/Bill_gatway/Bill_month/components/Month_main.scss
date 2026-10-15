@@ -1,23 +1,63 @@
 .month_main {
-    margin-top: 10px;
     padding: 10px 0;
     height: 100%;
     overflow: auto;
     scrollbar-width: none;
     .dayBill {
         margin-bottom: 10px;
+        cursor: pointer;
     }
     .dayBill_top {
-        height: 80px;
+        height: 70px;
         background-color: #eee;
         border-radius: 15px;
         padding: 10px 20px;
+        display: flex;
+        flex-direction: column;
+        user-select:none;
+        
         .topRow {
             display: flex;
             justify-content: space-between;
             span {
                 font-size: 14px;
                 font-weight: 700;
+            }
+
+            .ArrowBox {
+                margin-right: 10px;
+                font-size: 18px;
+            }
+
+        }
+        .bottomRow {
+            display: flex;
+            .numSection {
+                flex: 1;
+                display: flex;
+                margin-bottom: 5px;
+                margin-top: 10px;
+                align-items: flex-end;
+                justify-content: space-between;
+                .numPart {
+                    span {
+                        margin-right: 10px;
+                    }
+                    .red {
+                        color: rgba(255, 51, 0, 0.833);
+                    }
+                    .green {
+                        color: rgba(34, 171, 34, 0.852);
+                    }
+                    .gray {
+                        color: #848181;
+                        font-weight: 700;
+                    }
+                    .strong {
+                        font-size: 18px;
+                        font-weight: 700;
+                    }
+                }
             }
         }
 

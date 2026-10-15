@@ -1,6 +1,6 @@
 import axios from "axios";
 import React, { createContext, useCallback, useContext, useEffect, useMemo, useState } from "react";
-import type { billItemType, billCtxType, YearDataMap, MonthDataMap } from './type'
+import type { billItemType, billCtxType, YearDataMap, MonthDataMap, DayDataMap } from './type'
 import _ from 'lodash'
 import dayjs from "dayjs";
 
@@ -10,12 +10,12 @@ type BillProviderProps = {
     children: React.ReactNode
 }
 
-
 export const BillProvider = (props: BillProviderProps) => {
     const { children } = props
     const [ billList, setBillList ] = useState<billItemType[]>([])
     const [ yearObj, setYearObj ] = useState<YearDataMap>({})
     const [ monthObj, setMonthObj ] = useState<MonthDataMap>({})
+    // const [ dayObj, setDayObj ] = useState<DayDataMap>({})
     useEffect(() =>{
         const yearObj = _.groupBy(billList, (item) => dayjs(item.date).format('YYYY'))
         setYearObj(yearObj)
@@ -41,7 +41,7 @@ export const BillProvider = (props: BillProviderProps) => {
 }
 
 export const useBill = () => {
-    const ctxData = useContext(ctx)
+    const ctxData = useContext(ctx) as billCtxType
     if(!ctxData) {
         console.log('useBill => ctxData 为空')
     }
