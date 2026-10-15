@@ -68,11 +68,26 @@
         }
     }
     .dayBill_expand {
-        height: 100px;
+        padding-bottom: 10px;
         background-color: #eee;
         &.expand {
             border-bottom-left-radius: 15px;
             border-bottom-right-radius: 15px;
+        }
+        .daybillRow {
+            height: 50px;
+            // background-color: pink;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+            span {
+                font-size: 16px;
+                font-weight: 700;
+            }
+            .num {
+                color: rgb(207, 87, 47);
+            }
         }
     }
 }

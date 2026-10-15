@@ -9,9 +9,21 @@ import type { PickerDate } from 'antd-mobile/es/components/date-picker/util'
 import type { YearMonth, YearMonthDay, DayDataMap, billItemType } from '../../../type'
 
 
-function DayBill_expand({ isExpand }: { isExpand: boolean }) {
+type DayBill_expandPropsType = {
+    isExpand: boolean
+    dayBillList: billItemType[]
+}
+
+function DayBill_expand(props: DayBill_expandPropsType) {
+    const { isExpand, dayBillList } = props
     return(
         <div className={classNames('dayBill_expand', isExpand ? 'expand' : '')}>
+            { dayBillList.map(dayBillItem =>
+                <div className="daybillRow">
+                    <span className='useFor'>{dayBillItem.useFor}</span>
+                    <span className='num'>{dayBillItem.money}</span>
+                </div>
+            ) }
         </div>
     )
 }
@@ -77,7 +89,7 @@ function DayBill(props: DayBillPropsType) {
                 isExpand={isExpand} curDate={curDate}
                 numStastic={numStastic}
             ></DayBill_top>
-            {isExpand && <DayBill_expand isExpand={isExpand}></DayBill_expand>}
+            {isExpand && <DayBill_expand isExpand={isExpand} dayBillList={dayBillList}></DayBill_expand>}
         </div>
     )
 }
