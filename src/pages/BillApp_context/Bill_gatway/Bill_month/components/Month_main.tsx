@@ -19,7 +19,7 @@ function DayBill_expand(props: DayBill_expandPropsType) {
     return(
         <div className={classNames('dayBill_expand', isExpand ? 'expand' : '')}>
             { dayBillList.map(dayBillItem =>
-                <div className="daybillRow">
+                <div className="daybillRow" key={dayBillItem.id}>
                     <span className='useFor'>{dayBillItem.useFor}</span>
                     <span className='num'>{dayBillItem.money}</span>
                 </div>
@@ -97,11 +97,9 @@ function DayBill(props: DayBillPropsType) {
 function Month_main({ curDate }: { curDate: PickerDate }) {
     const { monthObj } = useBill()
     const monthKey = dayjs(curDate).format('YYYY-M') as YearMonth
-    const dayList = monthObj[monthKey]
+    const dayList = _.orderBy(monthObj[monthKey], 'date', 'desc')
     const dayObj = _.groupBy(dayList, item => dayjs(item.date).format('YYYY-MM-DD')) as DayDataMap
     const dayObjKeys = Object.keys(dayObj) as YearMonthDay[]
-    console.log(333, dayObj, dayObjKeys);
-    
     return(
         <div className='month_main hide-scrollbar'>
             { dayObjKeys.map((dayKey) =>
