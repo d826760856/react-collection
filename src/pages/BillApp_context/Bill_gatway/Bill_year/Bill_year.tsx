@@ -107,7 +107,9 @@ function Bill_year() {
             </div>
             <div className="monthListArea">
                 { monthStasticList.map(monthStastic => 
-                    <Bill_card needExpand={false} title={monthStastic.title} numStastic={monthStastic.numStastic}/>
+                    <Bill_card key={monthStastic.title} needExpand={false}
+                        title={monthStastic.title} numStastic={monthStastic.numStastic}
+                    />
                 )}
             </div>
         </div>
