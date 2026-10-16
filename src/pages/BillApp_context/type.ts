@@ -8,7 +8,7 @@ type Day =
     | "13" | "14" | "15" | "16" | "17" | "18"
     | "19" | "20" | "21" | "22" | "23" | "24"
     | "25" | "26" | "27" | "28" | "29" | "30" | "31"
-type Year = `${number}`
+export type Year = `${number}`
 export type YearMonth = `${number}-${Month}`;
 export type YearMonthDay = `${number}-${Month}-${Day}`
 

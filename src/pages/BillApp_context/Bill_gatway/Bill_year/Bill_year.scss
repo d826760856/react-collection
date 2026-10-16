@@ -1,0 +1,45 @@
+.billYear {
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    .selectRow {
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .selectBtn {
+            cursor: pointer;
+            height: 100%;
+            width: 30%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 500;
+            span {
+                font-size: 16px;
+                margin-right: 5px;
+            }
+        }
+    }
+    .stasticRow {
+        display: flex;
+        justify-content: flex-start;
+        margin-top: 20px;
+        .numBox {
+            height: 100%;
+            font-size: 14px;
+            min-width: 70px;
+            margin-left: 20px;
+            .Num {
+                font-size: 22px;
+            }
+        }
+    }
+    .monthListArea {
+        flex: 1;
+        margin-top: 30px;
+        scrollbar-width: none;
+        overflow-y: scroll;
+    }
+}

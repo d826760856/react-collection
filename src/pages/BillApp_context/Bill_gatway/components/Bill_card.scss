@@ -1,0 +1,73 @@
+.Bill_card {
+    background-color: #eee;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    user-select:none;
+    margin-bottom: 10px;
+    cursor: pointer;
+    .Bill_card_top {
+        padding: 10px 20px;
+
+        .topRow {
+            display: flex;
+            justify-content: space-between;
+            span {
+                font-size: 14px;
+                font-weight: 700;
+            }
+    
+            .ArrowBox {
+                margin-right: 10px;
+                font-size: 18px;
+            }
+    
+        }
+        .bottomRow {
+            display: flex;
+            .numSection {
+                flex: 1;
+                display: flex;
+                margin-bottom: 5px;
+                margin-top: 10px;
+                align-items: flex-end;
+                justify-content: space-between;
+                .numPart {
+                    span {
+                        margin-right: 10px;
+                    }
+                    .red {
+                        color: rgba(255, 51, 0, 0.833);
+                    }
+                    .green {
+                        color: rgba(34, 171, 34, 0.852);
+                    }
+                    .gray {
+                        color: #848181;
+                        font-weight: 700;
+                    }
+                    .strong {
+                        font-size: 18px;
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+    }
+    .Bill_card_expand {
+        flex: 1;
+        background-color: #eee;
+        padding: 20px;
+    }
+    &.expand {
+        .Bill_card_top {
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+            border-bottom: 1px solid #ccc;
+        }
+        .Bill_card_expand {
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+        }
+    }
+}
